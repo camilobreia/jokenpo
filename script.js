@@ -24,21 +24,29 @@ function confirmar(){
     } 
     //res.innerHTML = `Você escolheu ${esc} e o Bot escolheu ${escBot}`
     if(esc == 'pedra' && escBot == 'tesoura'){
-        res.innerHTML = `Você escolheu ${esc} e o Bot escolheu ${escBot} => Você venceu!!!`
+        res.innerHTML = `Você escolheu <b>${esc}</b> <br> Bot escolheu <b>${escBot}</b> <br> <br>=> <b>Você venceu!!!</b>`
         placarEuNum = placarEuNum + 1
     } else if(esc == 'tesoura' && escBot == 'papel'){
-        res.innerHTML = `Você escolheu ${esc} e o Bot escolheu ${escBot} => Você venceu!!!`
+        res.innerHTML = `Você escolheu <b>${esc}</b> <br> Bot escolheu <b>${escBot}</b> <br><br>=> <b>Você venceu!!!</b>`
         placarEuNum = placarEuNum + 1
     } else if(esc == 'papel' && escBot == 'pedra'){
-        res.innerHTML = `Você escolheu ${esc} e o Bot escolheu ${escBot} => Você venceu!!!`
+        res.innerHTML = `Você escolheu <b>${esc}</b> <br> Bot escolheu <b>${escBot}</b> <br><br>=> <b>Você venceu!!!</b>`
         placarEuNum = placarEuNum + 1
     } else if((esc == 'pedra' && escBot == 'pedra') || (esc == 'papel' && escBot == 'papel') || (esc == 'tesoura' && escBot == 'tesoura')){
-        res.innerHTML = `Você escolheu ${esc} e o Bot escolheu ${escBot} => EMPATE!!!`
+        res.innerHTML = `Você escolheu <b>${esc}</b> <br> Bot escolheu <b>${escBot}</b> <br><br>=> <b>EMPATE!!!</b>`
     } else{
-        res.innerHTML = `Você escolheu ${esc} e o Bot escolheu ${escBot} => Você perdeu!!!`
+        res.innerHTML = `Você escolheu <b>${esc}</b> <br> Bot escolheu <b>${escBot}</b> <br><br>=> <b>Você perdeu!!!</b>`
         placarBotNum = placarBotNum + 1
     }
     placareu.innerHTML = `${placarEuNum}`
     placarbot.innerHTML = `${placarBotNum}`
     
+}
+
+function limpar(){
+    res.innerHTML = ''
+    placareu.innerHTML = ``
+    placarbot.innerHTML = ``
+    placarEuNum = 0
+    placarBotNum = 0
 }

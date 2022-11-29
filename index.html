@@ -4,35 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joken Po</title>
-    <link rel="stylesheet" href="estilo.css">
+    <title>JokenPo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Joken Pô</h1>
+        <h1>JokenPô</h1>
     </header>
-    <section>
-        <div>
-            <p>Faça sua escolha:</p>
-            <input type="radio" name="escolha" id="pedra">
-            <label for="pedra">Pedra</label>
-            <input type="radio" name="escolha" id="papel">
-            <label for="papel">Papel</label>
-            <input type="radio" name="escolha" id="tesoura">
-            <label for="escolha">Tesoura</label>
-            <p>
-                <input type="button" value="OK" onclick="confirmar()">
-            </p>
-        </div>
-        <div id="res">
-
-        </div>
-        <div>
-            <br> PLACAR: <br>
-            <br>VOCÊ: <div id="placareu"></div>
-            <br>COMPUTADOR: <div id="placarbot"></div>
-        </div>
-    </section>
+        <section>
+            <div>
+                <h2>Faça sua escolha:</h2>
+                <input type="radio" name="escolha" id="pedra">
+                <label for="pedra">Pedra</label>
+                <input type="radio" name="escolha" id="papel">
+                <label for="papel">Papel</label>
+                <input type="radio" name="escolha" id="tesoura">
+                <label for="tesoura">Tesoura</label>
+                <p>
+                    <input type="button" value="OK" onclick="confirmar()">
+                    <input type="button" value="Limpar" onclick="limpar()">
+                </p>
+            </div>
+            <div id="res">
+            </div>
+            <div>
+                <p class="placar">PLACAR:</p>
+                <br>VOCÊ: <div id="placareu"></div>
+                <br>COMPUTADOR: <div id="placarbot"></div>
+            </div>
+        </section>
+    
     <footer>
         <p>&copy; CLB Tech</p>
     </footer>

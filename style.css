@@ -1,0 +1,33 @@
+header {
+    font-size: large;
+    color: white;
+    text-align: center;
+}
+
+body {
+    background-color: #495850;
+    font: normal 15pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+    background: white;
+    border-radius: 10px;   
+    padding: 15pt; 
+    width: 400px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.541);
+    text-align: center;
+}
+footer {
+    color: white;
+    text-align: center;
+}
+
+p.placar {
+    background-color: #495850;
+    color: white;
+    font-size: 20px;
+    margin: 29px;
+    padding: 4px;    
+}
