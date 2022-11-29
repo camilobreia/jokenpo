@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joken Po</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Joken Pô</h1>
+    </header>
+    <section>
+        <div>
+            <p>Faça sua escolha:</p>
+            <input type="radio" name="escolha" id="pedra">
+            <label for="pedra">Pedra</label>
+            <input type="radio" name="escolha" id="papel">
+            <label for="papel">Papel</label>
+            <input type="radio" name="escolha" id="tesoura">
+            <label for="escolha">Tesoura</label>
+            <p>
+                <input type="button" value="OK" onclick="confirmar()">
+            </p>
+        </div>
+        <div id="res">
+
+        </div>
+        <div>
+            <br> PLACAR: <br>
+            <br>VOCÊ: <div id="placareu"></div>
+            <br>COMPUTADOR: <div id="placarbot"></div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CLB Tech</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
